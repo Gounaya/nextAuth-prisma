@@ -94,3 +94,30 @@ NextAuth.js is an open-source authentication solution designed specifically for 
 - [GitHub Repository](https://github.com/nextauthjs/docs)
 
 Feel free to explore the documentation and integrate NextAuth.js into your project! 😊🔐
+
+What do you need to install : 
+
+## Prisma 
+Finally, set up Prisma ORM with the init command of the Prisma CLI:
+
+
+```bash
+npx prisma init --datasource-provider sqlite
+npm install @prisma/client @auth/prisma-adapter
+npx prisma migrate dev
+
+```
+https://www.prisma.io/docs/orm/more/help-and-troubleshooting/help-articles/nextjs-prisma-client-dev-practices
+
+
+Certainly! Prisma Studio is a powerful tool for working with data in your Prisma projects. It provides a simple tabular interface to explore and manipulate your data. Here are some key features:
+
+1. **Data Exploration**: Quickly view your local database data, check app functionality, and interact with it using full CRUD operations. Filter, sort, and paginate data as needed.
+
+2. **Access Relations**: Easily navigate related data from both sides of a relation. Click on a relation field to drill down into related models.
+
+3. **Data Entry**: Edit data in place by double-clicking on a cell. All edits require confirmation, so accidental changes are avoided.
+
+4. **Dark Mode**: Match your OS theme or reduce eye strain by switching to Prisma Studio's dark mode.
+
+To get started, simply run `npx prisma studio` from your Prisma project. It will automatically open a local server where you can explore your data. Enjoy using Prisma Studio! 😊
