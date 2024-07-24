@@ -1,4 +1,6 @@
 import { getRequiredAuthSession } from "@/lib/auth";
+import { signOut } from "next-auth/react";
+import { LogoutButton } from "./LogoutButton";
 
 export const User = async () => {
 
@@ -16,9 +18,9 @@ export const User = async () => {
                 <p>{session.user.email}</p>
                 <p className="text-xs italic">{session.user.id}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-secondary"> Logout </button>
+                    <LogoutButton />
                 </div>
             </div>
-        </div>
+        </div >
     )
 } 
